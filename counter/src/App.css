@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  margin:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10rem;
+  position: relative;
+}
+
+.main{
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 10rem;
+  border-radius: 1.5rem;
+  background-color: #ABDADC;
+}
+
+button{
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  background-color: #C5D89D;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover{
+  background-color: #9CAB84;
+}
+
+h3{
+  font-size: 3rem;
+}
