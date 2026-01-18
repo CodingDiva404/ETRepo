@@ -2,51 +2,63 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
+  const [input, setInput] = useState("");
+  const [task, setTask] = useState([]);
 
-  let [add, setAdd] = useState();
-  let [remove, setRemove] = useState();
-  let [edit, setEdit] = useState();
-  let [input, setInput] = useState();
-  let [task, setTask] = useState([]);
+  // input handler
+  const handleInput = (e) => setInput(e.target.value);
 
-
-  const handleInput = (e) => {
-    let userInput = e.target.value
-    setInput(userInput)
-  }
-
+  // add task
   const addTask = () => {
-    // To 
-    if (input.trim() === "") return;
-    setTask([...task, { text: input, id: Date.now() }]);
+    if (!input.trim()) return;
+
+    setTask([...task, { id: Date.now(), text: input }]);
     setInput("");
-  }
+  };
 
-  const editTask = () => {
+  // edit task
+  const editTask = (id) => {
+    const newText = prompt("Edit task:");
+    if (!newText) return;
 
-  }
+    setTask(task.map(t =>
+      t.id === id ? { ...t, text: newText } : t
+    ));
+  };
 
-  const deleteTask = () => {
-
-  }
-
+  // delete task
+  const deleteTask = (id) => {
+    setTask(task.filter(t => t.id !== id));
+  };
 
   return (
-    <div className='todo'>
+    <div className="todo">
       <h1>Todo List</h1>
+
       <div className="input">
-        <input type="text" className="userInput" onChange={handleInput} />
-        <button className="addBtn" onClick={addTask}>Add Item</button>
+        <input
+          type="text"
+          className="userInput"
+          value={input}
+          onChange={handleInput}
+        />
+        <button className="addBtn" onClick={addTask}>
+          Add Item
+        </button>
       </div>
 
       <div className="list">
         <ul>
-          {task.map((t) => (
+          {task.map(t => (
             <li key={t.id}>
               <span className="todoText">{t.text}</span>
               <div className="actions">
-                <button className="editBtn">Edit</button>
-                <button className="removeBtn">Remove</button>
+                <button className="editBtn" onClick={() => editTask(t.id)}>
+                  Edit
+                </button>
+                <button className="removeBtn" onClick={() => deleteTask(t.id)}>
+                  Remove
+                </button>
               </div>
             </li>
           ))}
@@ -57,3 +69,4 @@ function App() {
 }
 
 export default App;
+s
