@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.list ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
