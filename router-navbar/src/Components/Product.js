@@ -1,4 +1,6 @@
 import { Link, Outlet } from "react-router-dom"
+import '../App.css'
+
 
 function Product(){
     return (
@@ -6,7 +8,7 @@ function Product(){
            <h1>Products</h1>
 
             <nav>
-            <Link to="car">Car</Link> | 
+            <Link to="car">Car</Link> 
             <Link to="bike">Bike</Link>
             </nav>
             

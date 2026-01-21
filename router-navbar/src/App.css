@@ -15,3 +15,30 @@
     list-style: none;
     gap: 10px;
 }
+
+.logo{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mainPage , .productList{
+    background-color: #F0F0DB;
+    height: 91vh;
+    overflow: hidden;
+}
+
+.mainPage , .productList h1{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.productList nav{
+    position: relative;
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

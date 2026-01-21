@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <div className="container">
             <div className="logo">
-                <h1>Shraddha</h1>
+                <h1 className="logo">Shraddha</h1>
             </div>
 
             <div className="list">
