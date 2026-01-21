@@ -1,12 +1,12 @@
 // #Task1
-// #Simple-Counter
-// #Todo
-// #Context-API Counter
+// #Simple-Counter ✅
+// #Todo ✅
+// #Context-API Counter ✅
 
 
 // Task 2
-// React-Router and nested Routing 
-// Implement navigation and useParam
+// React-Router and nested Routing ✅
+// Implement navigation and useParam 
 // Nodejs application that give user to upload the txt file
 
 // Task 3
