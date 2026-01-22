@@ -1,10 +1,11 @@
 import './App.css';
-import { Route , Routes , useParams } from 'react-router-dom';
+import { Route , Routes } from 'react-router-dom';
 import Home from './Components/Home.jsx'
 import Product from './Components/Product.jsx'
 import Contact from './Components/Contact.jsx'
 import Bike from './Components/Bike.jsx'
 import Car from './Components/Car.jsx'
+import ProductDetails from './Components/Productdetails.jsx'
 import Navbar from './Navbar.jsx'
 
 function App() {
@@ -12,12 +13,13 @@ function App() {
     <>
     <Navbar/>
         <Routes>
-            <Route to='/' element={<Home />}/>
-            <Route to='/home' element={<Product/>}>
-                <Route to='car'  element={<Car />}/>
-                <Route to='bike'  element={<Bike />}/>
+            <Route path='/' element={<Home />}/>
+            <Route path='/product' element={<Product/>}>
+                <Route path=':type' element={<ProductDetails />} />
+                {/* <Route path='car'  element={<Car />}/>
+                <Route path='bike'  element={<Bike />}/> */}
             </Route>
-            <Route to='/contact' element={<Contact />} />
+            <Route path='/contact' element={<Contact />} />
         </Routes>
     
     </>

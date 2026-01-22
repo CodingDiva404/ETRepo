@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 function Navbar(){
@@ -10,9 +10,17 @@ function Navbar(){
 
             <div className="link">
                 <li>
-                    <Link  />
+                    <NavLink to='/'>Home</NavLink>
+             </li>
+                <li>
+                    <NavLink to='/product'>Product</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/contact'>Contact</NavLink>
                 </li>
             </div>
         </div>
     )
 }
+
+export default Navbar;
