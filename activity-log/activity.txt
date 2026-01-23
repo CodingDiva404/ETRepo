@@ -1,0 +1,6 @@
+[LOGIN] User logged in
+[CLICK] Button clicked
+[LOGOUT] User logged out
+[LOGIN] User logged in
+[ERROR] Invalid password
+[CLICK] Link clicked
