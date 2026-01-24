@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App{
+  margin: 10px;
+  padding: 3rem;
+  background-color: #40513B;
+  color: white;
+  width: 50%;
+  height: 100%;
+}
+
+.searchBar{
+  width: 100%;
+  border: none;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.searchBar:focus{
+  border: none;
+  outline: none;
+}
+
+ul li{
+  list-style: none;
+}
