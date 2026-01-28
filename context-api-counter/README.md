@@ -1,5 +1,3 @@
-# Notes
-
 ## Final correct mental model
 
 ### 1️⃣ ContextData
