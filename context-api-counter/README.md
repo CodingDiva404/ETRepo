@@ -1,6 +1,6 @@
 # Notes
 
-## Final correct mental model 🧠✨
+## Final correct mental model
 
 ### 1️⃣ ContextData
 - Creates a Context
