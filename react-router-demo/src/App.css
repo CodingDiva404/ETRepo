@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 15px 30px;
+}
+
+/* Links */
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #00d9ff;
+}
+
+/* Page content */
+.page {
+  text-align: center;
+  margin-top: 60px;
+}
