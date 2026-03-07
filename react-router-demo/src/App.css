@@ -1,32 +1,86 @@
-body {
-  font-family: Arial;
+/* Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-/* Navbar */
+/* App background */
+body {
+  background: #f4f6f8;
+}
+
+/* ================= NAVBAR ================= */
+
 .navbar {
+  background: #1f2933;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #222;
-  color: white;
-  padding: 15px 30px;
 }
 
-/* Links */
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .nav-links a {
+  color: white;
   margin-left: 20px;
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
   color: #00d9ff;
 }
 
-/* Page content */
+/* ================= PAGE CONTENT ================= */
+
 .page {
+  max-width: 900px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   text-align: center;
-  margin-top: 60px;
+}
+
+.page h2 {
+  margin-bottom: 10px;
+}
+
+/* ================= SUB NAVBAR ================= */
+
+.sub-navbar {
+  margin-top: 20px;
+  padding: 12px;
+  background: #eef2f7;
+  border-radius: 8px;
+}
+
+.sub-navbar a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
+
+.sub-navbar a:hover {
+  color: #2563eb;
+}
+
+/* ================= PRODUCT SECTION ================= */
+
+.product-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #eee;
 }
